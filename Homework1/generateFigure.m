@@ -1,23 +1,23 @@
-function [] = generateFigure(imgH ,imgW )
+function [img] = generateFigure(imgH ,imgW )
 img = zeros(imgH,imgW,3);
 img = uint8(img);
-% °ÑÍ¼Æ¬ÉèÖÃÎª°×É«
+% æŠŠå›¾ç‰‡è®¾ç½®ä¸ºç™½è‰²
 img(:,:,1)=255;
 img(:,:,2)=255;
 img(:,:,3)=255;
-% Éú³ÉxµÄ0-2*piÊı¾İ
+% ç”Ÿæˆxçš„0-2*piæ•°æ®
 x=0:2*pi/(imgW-1):2*pi;
-% ¼ÆËãÏàÓ¦µÄy
+% è®¡ç®—ç›¸åº”çš„y
 red_y=sin(x);
 green_y=cos(x);
 blue_y=x.^2;
-% °ÑxÓ³Éäµ½Í¼Æ¬µÄ¿í
+% æŠŠxæ˜ å°„åˆ°å›¾ç‰‡çš„å®½
 x=int32(x/2/pi*imgW);
-% °ÑyÓ³Éäµ½Í¼Æ¬µÄ¸ß
+% æŠŠyæ˜ å°„åˆ°å›¾ç‰‡çš„é«˜
 red_y=int32(imgH/40*39-round(red_y*imgH/40));
 green_y=int32(imgH/40*39-round(green_y*imgH/40));
 blue_y=int32(imgH/40*39-round(blue_y*imgH/40));
-% ±éÀúÊı¾İäÖÈ¾Í¼Æ¬
+% éå†æ•°æ®æ¸²æŸ“å›¾ç‰‡
 for i=1:imgW
     if x(i)==0
         x(i)=x(i)+1;
@@ -35,9 +35,9 @@ for i=1:imgW
         img(blue_y(i),x(i),2)=0;
     end
 end
-% »æÖÆºÚÉ«×ø±êÖá
+% ç»˜åˆ¶é»‘è‰²åæ ‡è½´
 img(:,1,:)=0;
 img(round(imgH/40*39),:,:)=0;
-% Õ¹Ê¾Í¼Æ¬
+% å±•ç¤ºå›¾ç‰‡
 imshow(img);
 end
