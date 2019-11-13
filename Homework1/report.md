@@ -7,7 +7,7 @@
    构建如下函数在文件 generateFigure.m 中
 
    ```matlab
-   function [] = generateFigure(imgH ,imgW )
+   function [img] = generateFigure(imgH ,imgW )
    img = zeros(imgH,imgW,3);
    img = uint8(img);
    % 把图片设置为白色
@@ -58,6 +58,8 @@
 2. 不使用for循环，实现bilinear interpolation
 
 测试图片为test.png，把原图片放大二倍
+
+构建如下函数在文件 bi.m 中
 
 ```matlab
 function []=bi(a)
