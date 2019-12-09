@@ -3,25 +3,8 @@
 **姓名：刘焱宁&emsp;&emsp;&emsp; 班级：2017级软工二班&emsp;&emsp;&emsp;学号：3017218100**
 
 1. 对LoG的数学形式进行数学推导
-   $$
-   \begin{aligned}
-   \nabla^2 G(x,y)
-   &=\frac{\partial^2 G(x,y)}{\partial x^2}+\frac{\partial^2 G(x,y)}{\partial y^2}\\
-   \ \\
-   &=\frac\partial{\partial x}
-   \left[ \frac{-x}{\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}} \right]
-   +\frac\partial{\partial y}
-   \left[ \frac{-y}{\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}} \right]	\\
-   \ \\
-   &=\left[\frac{x^2}{\sigma^4}-\frac{1}{\sigma^2} \right]
-   e^{-\frac{x^2+y^2}{2\sigma^2}}
-   +\left[\frac{y^2}{\sigma^4}-\frac{1}{\sigma^2} \right]
-   e^{-\frac{x^2+y^2}{2\sigma^2}}	\\
-   \ \\
-   &=\left[\frac{x^2+y^2-2\sigma^2}{\sigma^4} \right]
-   e^{-\frac{x^2+y^2}{2\sigma^2}}
-   \end{aligned}
-   $$
+
+![](https://latex.codecogs.com/gif.latex?\begin{aligned}&space;\nabla^2&space;G(x,y)&space;&=\frac{\partial^2&space;G(x,y)}{\partial&space;x^2}&plus;\frac{\partial^2&space;G(x,y)}{\partial&space;y^2}\\&space;\&space;\\&space;&=\frac\partial{\partial&space;x}&space;\left[&space;\frac{-x}{\sigma^2}e^{-\frac{x^2&plus;y^2}{2\sigma^2}}&space;\right]&space;&plus;\frac\partial{\partial&space;y}&space;\left[&space;\frac{-y}{\sigma^2}e^{-\frac{x^2&plus;y^2}{2\sigma^2}}&space;\right]&space;\\&space;\&space;\\&space;&=\left[\frac{x^2}{\sigma^4}-\frac{1}{\sigma^2}&space;\right]&space;e^{-\frac{x^2&plus;y^2}{2\sigma^2}}&space;&plus;\left[\frac{y^2}{\sigma^4}-\frac{1}{\sigma^2}&space;\right]&space;e^{-\frac{x^2&plus;y^2}{2\sigma^2}}&space;\\&space;\&space;\\&space;&=\left[\frac{x^2&plus;y^2-2\sigma^2}{\sigma^4}&space;\right]&space;e^{-\frac{x^2&plus;y^2}{2\sigma^2}}&space;\end{aligned})
 
 2.  
 
